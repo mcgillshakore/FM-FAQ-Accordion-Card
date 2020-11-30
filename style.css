@@ -12,10 +12,13 @@
     font-family: 'Kumbh Sans', sans-serif;
 }
 
-body {
-    background: rgb(18,27,102);
-    background: linear-gradient(180deg, var(--soft-violet) 0%, var(--soft-blue)100%);
+html {
+    background: var(--soft-violet); /* fallback color */
+    background: linear-gradient( to bottom, var(--soft-violet), var(--soft-blue));
     background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
 }
 
 .attribution { font-size: 11px; text-align: center; }
